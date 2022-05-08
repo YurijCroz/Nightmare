@@ -18,6 +18,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 
 /*!WRAPPER & ASIDE*/
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .wrapper {
     max-width: 1922px;
 }
@@ -34,6 +38,11 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.summon-menu {
+    margin-top: 46px;
+    display: none;
 }
 
 .hearts {
@@ -62,7 +71,6 @@ header {
 
 .inner-menu a {
     text-decoration: none;
-    font-family: 'Akrobat';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -79,7 +87,6 @@ header {
 }
 
 .red-block a {
-    font-family: 'Akrobat';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -108,7 +115,7 @@ main {
 }
 
 .welcome h1{                        /* 194 */
-    font-family: 'Zona Pro';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 72px;
@@ -133,7 +140,6 @@ main {
 .more-block h4 {
     margin-left: 70px;
     width: 500px;
-    font-family: 'Akrobat';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -147,8 +153,8 @@ main {
     height: 733px;
     flex-basis: 786px;
     position: relative;
-    z-index: 2;
-    
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 .img-inicorn {
@@ -156,8 +162,6 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right: 40px;
-    margin-bottom: 40px;
 }
 
 /* !FOOTER */
@@ -170,10 +174,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 0 0;
 }
 
 footer p {
-    font-family: 'Akrobat';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -187,9 +191,12 @@ footer p {
     list-style-type: none;
 }
 
+.footer__inner-menu li:last-child {
+    margin-right: 0px;
+}
+
 .footer__inner-menu a {
     text-decoration: none;
-    font-family: 'Akrobat';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -199,4 +206,47 @@ footer p {
 
 .footer__lot-icons li {
     display: inline;
+}
+
+
+
+
+@media (max-width:1026px) {
+    .wrapper {
+        max-width: 1026px;
+    }
+    aside {
+        height: 1469px;
+        padding-left: 30px;
+        flex-basis: 9.65%;
+    }
+    .summon-menu {
+        display: block;
+    }
+    .hearts {
+        position: absolute;
+        left: 125px;
+    }
+    .inner-menu li {
+        display: none;
+    }
+    main {
+        flex-direction: column;
+    }
+    .welcome h1{
+        width: 867px;
+        right: 50px;
+        margin-top: 64px;
+    }
+    .more-block {
+        margin: 20px 0px;
+        right: 50px;
+    }
+    .unicorn {
+        align-self: flex-end;
+    }
+    .footer__inner-menu a {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
