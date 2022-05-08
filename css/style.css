@@ -1,0 +1,202 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+
+
+/*!WRAPPER & ASIDE*/
+.wrapper {
+    max-width: 1922px;
+}
+
+.wrapper-aside-header {
+    display: flex;
+}
+
+aside {
+    padding-left: 80px;
+    /* padding-right: 50px; */
+    height: 942px;
+    flex-basis: 14.7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hearts {
+    margin-top: 25px;
+}
+
+
+/*!HEADER*/
+
+.wrapper-header-main {
+    flex-basis: 85.3%;
+    background-color: #FFEA2F;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.inner-menu li {
+    display: inline;
+    margin-right: 85px;
+    list-style-type: none;
+}
+
+.inner-menu a {
+    text-decoration: none;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+}
+.red-block {
+    height: 120px;
+    width: 120px;
+    background-color: #CE0002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-block a {
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*!MAIN CONTENT */
+.wrapper-header-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.welcome h1{                        /* 194 */
+    font-family: 'Zona Pro';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 85px;
+    text-transform: uppercase;
+    color: #000000;
+    width: 1100px;
+    margin-top: 157px;
+    position: relative;
+    right: 194px;
+}
+
+.more-block {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 132px;
+    position: relative;
+    right: 60px;
+}
+
+.more-block h4 {
+    margin-left: 70px;
+    width: 500px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    position: relative;
+}
+
+.unicorn {
+    width: 786px;
+    height: 733px;
+    flex-basis: 786px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.img-inicorn {
+    background-image: url(../images/main/Unicorn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+/* !FOOTER */
+
+footer {
+    height: 54px;
+    background-color: #efefef;
+    padding: 0px 16px 0px 27px;
+    margin-top: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7E7E7E;
+}
+
+.footer__inner-menu li {
+    display: inline;
+    margin-right: 50px;
+    list-style-type: none;
+}
+
+.footer__inner-menu a {
+    text-decoration: none;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7E7E7E;
+}
+
+.footer__lot-icons li {
+    display: inline;
+}
