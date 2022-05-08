@@ -24,15 +24,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 .wrapper {
     max-width: 1922px;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper-aside-header {
     display: flex;
+    justify-content: space-between;
 }
 
 aside {
     padding-left: 80px;
-    /* padding-right: 50px; */
     height: 942px;
     flex-basis: 14.7%;
     display: flex;
@@ -47,6 +49,10 @@ aside {
 
 .hearts {
     margin-top: 25px;
+}
+
+.lot-icons li {
+    margin-bottom: 18px;
 }
 
 
@@ -105,13 +111,14 @@ header {
 main {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .welcome {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 800px;
+    max-width: 800px;
 }
 
 .welcome h1{                        /* 194 */
@@ -151,7 +158,6 @@ main {
 .unicorn {
     width: 786px;
     height: 733px;
-    flex-basis: 786px;
     position: relative;
     margin-right: 40px;
     margin-bottom: 40px;
@@ -174,7 +180,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 0 0;
+    flex: 0 0 auto;
 }
 
 footer p {
@@ -216,7 +222,7 @@ footer p {
         max-width: 1026px;
     }
     aside {
-        height: 1469px;
+        height: 1008px;
         padding-left: 30px;
         flex-basis: 9.65%;
     }
@@ -226,6 +232,9 @@ footer p {
     .hearts {
         position: absolute;
         left: 125px;
+    }
+    .wrapper-header-main {
+        flex-basis: 90.35%;
     }
     .inner-menu li {
         display: none;
@@ -248,5 +257,91 @@ footer p {
     .footer__inner-menu a {
         font-size: 14px;
         line-height: 17px;
+    }
+}
+
+
+
+@media (max-width:390px) {
+    .wrapper {
+        max-width: 390px;
+        background-color: #F1FAFF;
+    }
+    aside {
+        height: 373px;
+        padding-left: 15px;
+        flex-basis: 21.8%;
+    }
+    .summon-menu {
+        display: block;
+    }
+    .hearts {
+        position: absolute;
+        left: 125px;
+    }
+    .lot-icons {
+        display: none;
+    }
+    .wrapper-header-main {
+        flex-basis: 78.2%;
+    }
+    .inner-menu li {
+        display: none;
+    }
+    .red-block {
+        height: 98px;
+        width: 98px;
+    }
+    main {
+        height: 875px;
+        flex-direction: column;
+    }
+    .welcome{
+        max-width: 305px;
+        height: 826px;
+    }
+    .welcome h1{
+        width: 352px;
+        right: 50px;
+        margin-top: 49px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .more-block {
+        width: 345px;
+        margin: 0px 0px;
+        right: 50px;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .mb-rb {
+        align-self: flex-start;
+    }
+    .more-block h4{
+        width: 345px;
+        margin-top: 25px;
+        margin-left: 0px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .unicorn {
+        width: 345px;
+        height: 322px;
+        align-self: flex-end;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        position: absolute;
+        top: 240px;
+        right: 15px;
+    }
+    .img-inicorn {
+        background-image: url(../images/main/Unicorn-m.png);
+    }
+    footer {
+        padding: 0px 13px 0px 20px;
+        margin-top: 49px;
+    }
+    .footer__inner-menu li {
+        display: none;
     }
 }
